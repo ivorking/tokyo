@@ -13,15 +13,24 @@ const Highlight = props => (
    </span>
 );
 
+const NavItem = props => (
+   <li className={`mh2-ns f6 f4-1 tc ${props.className}`}>
+      <a className="white no-underline" href={props.href}>
+         {props.children}
+      </a>
+   </li>
+);
+
 const Nav = () => (
    <nav className = 'pt3 pt4-ns mb4 mb0-ns'>
       <ul className='list flex flex-wrap flex-nowrap-ns justify-between items-center pa0 ma0'>
       {menu.map(item => (
-         <li className={`mh2-ns f6 f4-l tc ${item.className}`}>
+         <NavItem {...item} />
+         {/* <li className={`mh2-ns f6 f4-l tc ${item.className}`}>
             <a className='white no-underline' href={item.href}>
                {item.children}
             </a>
-         </li>
+         </li> */}
       ))}
       </ul>
    </nav>
