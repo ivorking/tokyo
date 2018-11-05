@@ -15,7 +15,7 @@ const Highlight = ({ color, children }) => (
 
 const NavItem = ({ className, href, children }) => (
    <li className={`m2-ns f6 f4-1 tc ${className}`}>
-      <a className="white no-underline" href={href}>
+      <a className="i white no-underline" href={href}>
          {children}
       </a>
    </li>
@@ -24,7 +24,7 @@ const NavItem = ({ className, href, children }) => (
 const Nav = () => (
    <nav className = 'pt3 pt4-ns mb4 mb0-ns'>
       <ul className='list flex flex-wrap flex-nowrap-ns justify-between items-center pa0 ma0'>
-         {menu.map(item => <NavItem {...item} />)}
+         {menu.map(items => <NavItem {...item} />)}
       </ul>
    </nav>
 );
@@ -34,7 +34,7 @@ const Intro = () => (
       <div className="mb3 mb4-ns">
          <div>
          <Highlight color="aqua">Lost in Tokyo</Highlight>
-         is a directory of fun places to see, play in and <Highlight color="yellow">explore</Highlight>, in <Highlight color="blue">Tokyo</Highlight>, Japan.
+         is a test directory of fun places to see, play in and <Highlight color="yellow">explore</Highlight>, in <Highlight color="blue">Tokyo</Highlight>, Japan.
          </div>
          <div>
          From <Highlight color="yellow">museums</Highlight> and galleries, to Robot Restaurants and kitten cafes, Tokyo is the gift that keeps on giving. Dattebayo!
