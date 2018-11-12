@@ -15,7 +15,7 @@ const Highlight = ({children, type}) => (
 
 const NavItem = ({className, href, logo, children}) => (
    <li className={`mh2-ns f6 f4-l tc ${className}`}>
-     <a className="white no-underline" href={href}>
+     <a className="no-underline" href={href}>
        {logo ? <img src="../images/logo.svg" className="db center logo" /> : children}
      </a>
    </li>
@@ -39,7 +39,7 @@ const Nav = () => (
      <div>
        From <Highlight type="blue">museums</Highlight> and{' '}
        <Highlight type="yellow">galleries</Highlight>, to{' '}
-       <Highlight type="pink">restaurantsx</Highlight> and{' '}
+       <Highlight type="pink">restaurantsxx</Highlight> and{' '}
        <Highlight type="pink">kitten cafes</Highlight>, Tokyo is the gift that keeps on giving.{` `}
        <Highlight type="yellow">Dattebayo!</Highlight>
      </div>
